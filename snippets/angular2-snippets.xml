@@ -116,7 +116,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ng2ngRouterLink" value="[routerLink]=&quot;['routeName']&quot;" description="Angular 2 routerLink snippet" toReformat="true" toShortenFQNames="true">
+  <template name="ng2RouterLink" value="[routerLink]=&quot;['routeName']&quot;" description="Angular 2 routerLink snippet" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
