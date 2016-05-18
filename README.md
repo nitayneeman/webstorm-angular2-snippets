@@ -12,6 +12,17 @@ An adapter for using of <a href="https://github.com/johnpapa/vscode-angular2-sni
 ## Usage
 Start typing one of the following snippets, press `enter` and then fill the placeholders.
 
+###HTML Snippets
+```html
+ng2ngClass
+ng2ngFor
+ng2ngIf
+ng2ngModel
+ng2RouterLink
+ng2ngStyle
+ng2ngSwitch
+```
+
 ### TypeScript Snippets
 ```typescript
 ng2ComponentRoot  // Angular 2 root App component
