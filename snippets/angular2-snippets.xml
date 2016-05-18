@@ -1,0 +1,95 @@
+<templateSet group="angular2-snippets">
+  <template name="ng2Component" value="import { Component, OnInit } from '@angular/core';&#10;&#10;@Component({&#10;    moduleId: module.id,&#10;    selector: '$selectorName$',&#10;    templateUrl: '$componentName$.component.html'&#10;})&#10;&#10;export class $componentName$Component implements OnInit {&#10;    constructor() { }&#10;&#10;    ngOnInit() { }&#10;}" description="Angular 2 component snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="selectorName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2Service" value="import { Injectable } from '@angular/core';&#10;&#10;@Injectable()&#10;export class $serviceName$Service {&#10;    constructor() { }&#10;}" description="Angular 2 service snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="serviceName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2Pipe" value="import { Pipe, PipeTransform } from '@angular/core';&#10;&#10;@Pipe({&#10;    name: '$pipeName$'&#10;})&#10;&#10;export class $pipeName$Pipe implements PipeTransform {&#10;    transform(value: any, args: any[]): any {&#10;        &#10;    }&#10;}" description="Angular 2 pipe snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="pipeName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2Routes" value="@Routes([&#10;    { path: '$path$', component: $componentName$ }&#10;])" description="Angular 2 route config snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2RoutePath" value="{ path: '$path$', component: $componentName$ }" description="Angular 2 route path snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2HttpGet" value="return this.http.get($url$)&#10;    .map((res: Response) =&gt; res.json());" description="Angular 2 Http.get snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2Subscribe" value="this.service.function&#10;    .subscribe(arg =&gt; this.property = arg);" description="Angular 2 observable subscribe snippet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2Bootstrap" value="import { enableProdMode } from '@angular/core';&#10;import { bootstrap } from '@angular/platform-browser-dynamic';&#10;&#10;import { AppComponent } from './$appComponentName$.component';&#10;&#10;// enableProdMode();&#10;&#10;bootstrap(AppComponent)&#10;    .then(success =&gt; console.log(`Bootstrap success`))&#10;    .catch(error =&gt; console.log(error));" description="Angular 2 bootstrap snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="appComponentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ng2ComponentRoot" value="import { Component } from '@angular/core';&#10;import { HTTP_PROVIDERS } from '@angular/http';&#10;import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';&#10;import 'rxjs/Rx'; // load the full rxjs&#10;&#10;@Component({&#10;    moduleId: module.id,&#10;    selector: '$selectorName$',&#10;    templateUrl: '$componentName$.component.html',&#10;    directives: [ROUTER_DIRECTIVES],&#10;    providers: [&#10;      HTTP_PROVIDERS,&#10;      ROUTER_PROVIDERS&#10;    ]&#10;})&#10;@Routes([&#10;    &#10;])&#10;export class AppComponent {}" description="Angular 2 App root component snippet" toReformat="false" toShortenFQNames="true">
+    <variable name="selectorName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
