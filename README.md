@@ -1,1 +1,5 @@
-# webstorm-angular2-snippets
+# Angular 2 TypeScript Snippets for WebStorm
+
+## Installation
+
+## Usage
