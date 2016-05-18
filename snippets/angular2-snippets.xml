@@ -92,4 +92,46 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="ng2ngClass" value="[ngClass]=&quot;{cssClass: expression}&quot;" description="Angular 2 ngClass snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng2ngFor" value="*ngFor=&quot;let item of list&quot;" description="Angular 2 *ngFor snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng2ngIf" value="*ngIf=&quot;expression&quot;" description="Angular 2 *ngIf snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng2ngModel" value="[(ngModel)]=&quot;binding&quot;" description="Angular 2 ngModel snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng2ngRouterLink" value="[routerLink]=&quot;['routeName']&quot;" description="Angular 2 routerLink snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng2ngStyle" value="[ngStyle]=&quot;{style: expression}&quot;" description="Angular 2 ngStyle snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng2ngSwitch" value="&lt;div [ngSwitch]=&quot;conditionExpression&quot;&gt;&#10;    &lt;div *ngSwitchWhen=&quot;expression&quot;&gt;output&lt;/div&gt;&#10;    &lt;div *ngSwitchDefault&gt;output2&lt;/div&gt;&#10;&lt;/div&gt;" description="Angular 2 ngSwitch snippet" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
