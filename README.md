@@ -1,7 +1,9 @@
 # Angular 2 TypeScript Snippets for WebStorm
 
+An adapter for using of <a href="https://github.com/johnpapa/vscode-angular2-snippets">Angular 2 snippets</a> (by @johnpapa) in  IntelliJ or WebStorm.
+
 ## Installation
-1. Install Intelij or WebStrom.
+1. Install IntelliJ or WebStorm.
 2. Download the <a href="https://github.com/nitayneeman/webstorm-angular2-snippets/blob/master/snippets/angular2-snippets.xml">snippets file</a>.
 3. Copy file into your templates folder (probably located in "{idea_configuration_directory}/config/templates").
 4. Reload the IDE.
